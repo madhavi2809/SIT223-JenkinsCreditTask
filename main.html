@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" , href="styles.css">
+  <style>
+    /*Styles for body, heading and form*/
+    body, h1, form {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Body Styling */
+    body {
+      font-family: Cambria;
+      background-color: rgb(226, 248, 239);
+    }
+    
+    /* Heading1 Styling */
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: rgb(255, 255, 255);
+      background-color: #014e2d;
+    }
+    
+    /* Form Styling */
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+
+      background-color: rgb(205, 246, 229);
+    }
+    
+    /* Label Styling */
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #014e2d;
+      text-align: center;
+    }
+    
+    /* Email Input Field Styling */
+    input[type="email"] {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* First Name Input Field Styling */
+    #Fname {
+      width: 43.3%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 6.5px;
+    }
+
+    /* Last Name Input Field Styling */
+    #Lname {
+      width: 43.3%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    /* Button Styling */
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #014e2d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    }
+    
+    /* Button Hover Effect */
+    button:hover {
+      background-color: #02834b;        /* Slightly lighter green on hover */
+    }
+  </style>
+  <title>DEV@Deakin Subscription</title>
+</head>
+
+<body>
+  <!-- Heading -->
+  <h1>Welcome to DEV@Deakin Family!</h1>
+
+  <!-- Subscription Form Initial Design -->
+  <form action = "/subscribe" method = "POST">
+    <label for="email">SIGN UP TO RECIEVE DAILY UPDATES:</label>
+    <input type="name" id="Fname" name="First Name" placeholder="Enter Your First Name" required>
+    <input type="name" id="Lname" name="Last Name" placeholder="Enter Your Last Name" required>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</body>
+</html>
